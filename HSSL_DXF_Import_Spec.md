@@ -33,7 +33,10 @@ Text attributes on the PARTDATA layer are to be organized into KEY: VALUE pairs.
 
 For parts where there is a requirement of direction of mill rolling, an arrow should be placed on the DETAIL layer in the center of the part.
 This can be a two line arrow or three line arrow. Only lines are needed. Dimensions and points are for reference.
+![two-line arrow](https://github.com/paddymills/hss-markdowns/raw/master/img/dxf_arrow2.png)
+![three-line arrow](https://github.com/paddymills/hss-markdowns/raw/master/img/dxf_arrow3.png)
 
 ---
 
 # Example Layout
+![example](https://github.com/paddymills/hss-markdowns/raw/master/img/dxf_example.png)
