@@ -32,7 +32,6 @@ Text attributes on the PARTDATA layer are to be organized into KEY: VALUE pairs.
 # Direction-of-rolling constraing
 
 For parts where there is a requirement of direction of mill rolling, an arrow should be placed on the DETAIL layer in the center of the part.
-
 This can be a two line arrow or three line arrow. Only lines are needed. Dimensions and points are for reference.
 
 ---
