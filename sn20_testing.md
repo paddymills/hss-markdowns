@@ -18,10 +18,4 @@
 - [ ] Swap sheet
 - [ ] Heat Swap
 
-### To Eval
-
-- [ ] SimTrans Web
-- [ ] Color Offload
-- [ ] Load Manager
-
 ### Notes
