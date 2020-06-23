@@ -1,23 +1,23 @@
 # SigmaNEST Testing (version: SigmaSUITE 20)
 
 - [ ] OYS Toolbar
-    - [ ] Autoprocess (`Punch, Drill, Mill`) :: issue 1
-    - [ ] Web Automation :: issue #2
+    - [ ] Autoprocess (`Punch, Drill, Mill`**) :: issue #2**
+    - [ ] Web Automation :: issue #3
     - [x] Part Rotation
     - [x] Workflow Export
 - [ ] SigmaNEST
     - [x] Part Import
-        - [x] Faro
+        - [x] Custom Splice (Faro/Scan)
         - [x] NX
-        - [x] ENG_mfg :: issue 3
-        - [ ] Webs/Flanges
+        - [x] ENG_mfg :: issue #5
+        - [ ] Webs/Flanges :: issue #1
     - [x] XML Import
     - [ ] Heat Swap
     - [ ] Nesting
     - [ ] NC Validation
         - [ ] Parts
         - [ ] Webs/Flanges
-- [ ] Sim Trans
+- [ ] Sim Trans :: issue #6
     - [ ] Plate import
     - [ ] Work order import
     - [ ] Heat Swap
@@ -25,6 +25,8 @@
 ### Issues
 
 1. **Waiting on SigmaTEK to fix NX import module**
+    1. Splines converted to long line segments, which makes webs under size
+    2. Optimize Spline Import freezes import
 2. Autoprocess button is blank in toolbar (not loading .dll)
 3. Web Automation displays error (passable)
 4. XML import launches x32 Sigmanest. **Requires new files** (deployment #4)
