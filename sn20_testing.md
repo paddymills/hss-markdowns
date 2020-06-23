@@ -1,28 +1,42 @@
-# SigmaNEST Version Testing Requirements
+# SigmaNEST Testing (version: SigmaSUITE 20)
 
-## Version: SigmaSUITE 20
+- [ ] OYS Toolbar
+    - [ ] Autoprocess (`Punch, Drill, Mill`) :: issue 1
+    - [ ] Web Automation :: issue #2
+    - [x] Part Rotation
+    - [x] Workflow Export
+- [ ] SigmaNEST
+    - [x] Part Import
+        - [x] Faro
+        - [x] NX
+        - [x] ENG_mfg :: issue 3
+        - [ ] Webs/Flanges
+    - [x] XML Import
+    - [ ] Heat Swap
+    - [ ] Nesting
+    - [ ] NC Validation
+        - [ ] Parts
+        - [ ] Webs/Flanges
+- [ ] Sim Trans
+    - [ ] Plate import
+    - [ ] Work order import
+    - [ ] Heat Swap
 
-### SigmaNEST
+### Issues
 
-- [ ] Autoprocess (`Punch, Drill, Mill`**)** :: _doesn't show up on toolbar_
-- [ ] Web Automation :: _error message_
-- [x] Part Rotation
-- [x] Workflow Export
-- [ ] Import Parts (_Faro_, _NX_, _ENG_mfg_**)**
-- [x] XML Import (**requires desktop file**)
-- [ ] Heat Swap (_ties w/ SimTrans_**)**
-- [ ] Nesting
-- [ ] Main Member NC
+1. **Waiting on SigmaTEK to fix NX import module**
+2. Autoprocess button is blank in toolbar (not loading .dll)
+3. Web Automation displays error (passable)
+4. XML import launches x32 Sigmanest. **Requires new files** (deployment #4)
+5. ENG_mfg parts import same as today, but turning off "Process Assembly Bodies" imports the wrong body
+6. SimTrans development instance needs set up **(district 1)**
 
-### Sim Trans
+### Deployment
 
-- [ ] Set up development instance (district=1)
-- [ ] Plate import
-- [ ] Work order import
-- [ ] Heat Swap
-
-### Notes
-
-- [x] XML import launches X1.4. Asked Marius for latest files. -> REQUIRES NEW FILES
-- [ ] Waiting on SigmaTEK to fix NX import module
-- 
+1. Database
+2. Re-point posts
+3. Install server filesystem
+4. OYS automation files (repoint where necessary)
+5. Client installs
+    1. master .ini files (config and license)
+    2. ProcessMapping.txt
