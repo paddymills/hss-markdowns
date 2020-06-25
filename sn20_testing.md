@@ -17,8 +17,8 @@
     - [ ] NC Validation
         - [ ] Parts
         - [ ] Webs/Flanges
-- [ ] Sim Trans :: issue #6
-    - [ ] Plate import
+- [ ] Sim Trans
+    - [x] Plate import
     - [ ] Work order import
     - [ ] Heat Swap
 
@@ -31,7 +31,6 @@
 3. Web Automation displays error (passable)
 4. XML import launches x32 Sigmanest. **Requires new files** (deployment #4)
 5. ENG_mfg parts import same as today, but turning off "Process Assembly Bodies" imports the wrong body
-6. SimTrans development instance needs set up **(district 1)**
 
 ### Deployment
 
