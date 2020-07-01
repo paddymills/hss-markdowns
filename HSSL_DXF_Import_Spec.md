@@ -1,6 +1,6 @@
-# High Steel Structures LLC DXF File Specification
+# High Steel Structures~LLC~ DXF File Specification
 
-### Preamble
+### Prelude
 
 The following specification outlines the format for which High Steel Structures LLC will expect to receive .dxf part files in.
 
