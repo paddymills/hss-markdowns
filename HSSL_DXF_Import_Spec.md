@@ -10,7 +10,7 @@ Entities are to be grouped into the following layers:
 
 | Layer Name | Description | Examples |
 | ---: | --- | --- |
-| **CUT** | Profile Entities | part perimeter, holes, cut-outs |
+| **CUT** | Profile Entities | profile, holes, interior contours |
 | **MARK** | Marked entities | work points, set lines |
 | **DETAIL** | Reference entities | direction-of-roll constraints |
 | **PARDATA** | Part attributes | grade, thickness, drawing |
@@ -21,7 +21,7 @@ Text attributes on the PARTDATA layer are to be organized into KEY: VALUE pairs.
 | KEY | Value Description | Format | Example(s) |
 | ---: | --- | --- | --- |
 | **PARTNAME** | Part name | [job]\_[mark] | 1200018A_x1a |
-| **MATERIAL** | Material grade | [spec]-[grade][test?] | A709-50T2 or A709-50 |
+| **MATERIAL** | Material grade | [spec]-[grade][test?] | A709-50T2 |
 | **THICKNESS** | Part Thickness (plate items) | integer or decimal | 1.375 |
 | **DRAWING** | Drawing number | alphanumeric | 1 or X1 |
 
