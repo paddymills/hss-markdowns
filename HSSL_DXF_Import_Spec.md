@@ -25,7 +25,7 @@ Text attributes on the PARTDATA layer are to be organized into KEY: VALUE pairs.
 | **THICKNESS** | Part Thickness (plate items) | integer or decimal | 1.375 |
 | **DRAWING** | Drawing number | alphanumeric | 1 or X1 |
 
-### Direction-of-rolling constraing
+### Direction-of-rolling constraint
 
 For parts where there is a requirement of direction of mill rolling, an arrow should be placed on the DETAIL layer in the center of the part.
 This can be a two line arrow or three line arrow. Only lines are needed. Dimensions and points are for reference.
