@@ -13,7 +13,7 @@ Entities are to be grouped into the following layers:
 | **CUT** | Profile Entities | profile, holes, interior contours |
 | **MARK** | Marked entities | work points, set lines |
 | **DETAIL** | Reference entities | direction-of-roll constraints |
-| **PARDATA** | Part attributes | grade, thickness, drawing |
+| **PARTDATA** | Part attributes | grade, thickness, drawing |
 
 ### Key: Value pairs
 Text attributes on the PARTDATA layer are to be organized into KEY: VALUE pairs. For example, material grade of A709-50 would result in the string `MATERIAL: A709-50`. Part attributes can be inside or outside the contour of the part, unless part file has multiple parts in it.
@@ -24,6 +24,8 @@ Text attributes on the PARTDATA layer are to be organized into KEY: VALUE pairs.
 | **MATERIAL** | Material grade | [spec]-[grade][test?] | A709-50T2 |
 | **THICKNESS** | Part Thickness (plate items) | integer or decimal | 1.375 |
 | **DRAWING** | Drawing number | alphanumeric | 1 or X1 |
+| **REVISION** | Revision number | alphanumeric | 0 |
+
 
 ### Direction-of-rolling constraint
 
