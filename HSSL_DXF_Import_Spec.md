@@ -1,8 +1,13 @@
 # High Steel Structures^LLC^ DXF File Specification
+#### Version: 1 (7/2/2020)
 
 ### Prelude
 
 The following specification outlines the format for which High Steel Structures^LLC^ will expect to receive .dxf part files in.
+
+### Part Names
+
+Parts should be named using the [job]_[mark]-[revision] format. For example: part `x1a` for job `1200018A` with revision `0` would be named `1200018A_x1a-R0`
 
 ### Layers
 
