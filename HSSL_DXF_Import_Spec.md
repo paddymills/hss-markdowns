@@ -7,7 +7,7 @@ The following specification outlines the format for which High Steel Structures^
 
 ### Part Names
 
-Parts should be named using the [job]_[mark]-[revision] format. For example: part `x1a` for job `1200018A` with revision `0` would be named `1200018A_x1a-R0`
+Part files should be named using the [job]_[mark]-[revision] format. For example: part `x1a` for job `1200018A` with revision `0` would be named `1200018A_x1a-R0`
 
 ### Layers
 
@@ -30,7 +30,6 @@ Text attributes on the PARTDATA layer are to be organized into KEY: VALUE pairs.
 | **THICKNESS** | Part Thickness (plate items) | integer or decimal | 1.375 |
 | **DRAWING** | Drawing number | alphanumeric | 1 or X1 |
 | **REVISION** | Revision number | alphanumeric | 0 |
-
 
 ### Direction-of-rolling constraint
 
