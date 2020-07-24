@@ -2,7 +2,7 @@
 
 - [ ] OYS Toolbar
     - [ ] Autoprocess (`Punch, Drill, Mill`**) :: issue #2**
-    - [ ] Web Automation :: issue #3
+    - [ ] Web Automation :: issue #3, #6
     - [x] Part Rotation
     - [x] Workflow Export
 - [ ] SigmaNEST
@@ -12,13 +12,13 @@
         - [x] ENG_mfg :: issue #5
         - [ ] Webs/Flanges :: issue #1
     - [x] XML Import
-    - [ ] Heat Swap
+    - [ ] Heat Swap :: issue #6 should be resolved first
     - [ ] Nesting
     - [ ] NC Validation
         - [ ] Parts
         - [ ] Webs/Flanges
-- [ ] Sim Trans
-    - [x] Plate import
+- [ ] Sim Trans :: issue #6
+    - [ ] Plate import
     - [ ] Work order import
     - [ ] Heat Swap
 
@@ -31,6 +31,7 @@
 3. Web Automation displays error (passable)
 4. XML import launches x32 Sigmanest. **Requires new files** (deployment #4)
 5. ENG_mfg parts import same as today, but turning off "Process Assembly Bodies" imports the wrong body
+6. SimTrans not working with multiple districts on different versions: dev(1) not working.
 
 ### Deployment
 
