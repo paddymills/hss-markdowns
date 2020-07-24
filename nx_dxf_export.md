@@ -28,7 +28,7 @@
 | **Sketches** | Work Points | Yes | Marking | 21-25 |
 |  | Zinc lines | Yes | Marking | 21-25 |
 |  | Direction of roll | Yes | No Cut | 26-30 |
-|  | Weld splices | Yes | No Cut | 26-30 |
+|  | Weld splices (slabs) | Yes | No Cut | 26-30 |
 | **Annotations** | Part attributes | Yes | Detail | PMI |
 |  | Dimensions | Yes | Detail | PMI |
 | **Drawings** | DXF Export | Yes | Kerf Cut | 101 |
@@ -36,9 +36,17 @@
 
 *if mapping holes as drill/punch, will need to map `{drill: 6..9, punch: 10}` (requires punch logic `!T && thk <= punch_thk`)
 
+## How SigmaNest Processes Map
+| Process | Mapping |
+| --- | --- |
+| Kerf Cut | Burn/drill entities |
+| Marking | Zinc/scribe entities |
+| No Cut | Annotations |
+| Detail | Annotations visible in part mode only |
+
 ## Todo
 - [ ] Consolidate layer groups?
-- [ ] Wildcard and range layers enhancement in SigmaNest
+- [x] Wildcard and range layers enhancement in SigmaNest :: email sent (also proposed use of RegEx)
 - [ ] PMI evaluation
 
 
