@@ -37,7 +37,7 @@ RA holes will match the subsize diameter. All other holes will match the final d
 
 ### Bent Plates
 
-Bent plates with holes on both sides of the bend line do not require DXF files (HSS will create models as they require special modeling). All other bent plates should have DXF files supplied. Bent plate lengths are to be calculated along the radius at the mid-thickness of the plate.
+Bent plates with holes on both sides of the bend line do not require DXF files (HSS will create models as they require special modeling). All other bent plates should have DXF files supplied. Bent plate lengths are to be calculated along the radius at the mid-thickness of the plate. **DXF files for bent plates must be in the flattened form.**
 
 ### Direction-of-rolling constraint
 
