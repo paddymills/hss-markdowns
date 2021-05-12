@@ -1,5 +1,5 @@
 # High Steel Structures^LLC^ DXF File Specification
-#### Version: 1 (7/2/2020)
+#### Version: 2 (5/12/2021)
 
 ### Prelude
 
