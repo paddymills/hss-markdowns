@@ -31,6 +31,14 @@ Text attributes on the PARTDATA layer are to be organized into KEY: VALUE pairs.
 | **DRAWING** | Drawing number | alphanumeric | 1 or X1 |
 | **REVISION** | Revision number | alphanumeric | 0 |
 
+### Hole Sizes
+
+RA holes will match the subsize diameter. All other holes will match the final diameter.
+
+### Bent Plates
+
+Bent plates with holes on both sides of the bend line do not require DXF files (HSS will create models as they require special modeling). All other bent plates should have DXF files supplied. Bent plate lengths are to be calculated along the radius at the mid-thickness of the plate.
+
 ### Direction-of-rolling constraint
 
 For parts where there is a requirement of direction of mill rolling, an arrow should be placed on the DETAIL layer in the center of the part.
