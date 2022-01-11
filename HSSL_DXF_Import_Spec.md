@@ -1,9 +1,9 @@
 # High Steel Structures^LLC^ DXF File Specification
-#### Version: 2.1 (1/11/2022)
+##### Version: 2.1 (1/11/2022)
 
 ### Prelude
 
-The following specification outlines the format for which High Steel Structures^LLC^ will expect to receive .dxf part files in.
+This specification outlines the format for which High Steel Structures^LLC^ will expect to receive .dxf part files.
 
 ### Part Names
 
@@ -21,7 +21,7 @@ Entities are to be grouped into the following layers:
 | **PARTDATA** | Part attributes | grade, thickness, drawing |
 
 ### Key: Value pairs
-Text attributes on the PARTDATA layer are to be organized into KEY: VALUE pairs. For example, material grade of A709-50 would result in the string `MATERIAL: A709-50`. Part attributes can be inside or outside the contour of the part, unless part file has multiple parts in it.
+Text attributes on the PARTDATA layer are to be organized into KEY: VALUE pairs. For example, material grade of A709-50 would result in the string `MATERIAL: A709-50`. Part attributes can be inside or outside the contour of the part.
 
 | KEY | Value Description | Format | Example(s) |
 | ---: | --- | --- | --- |
@@ -33,8 +33,9 @@ Text attributes on the PARTDATA layer are to be organized into KEY: VALUE pairs.
 
 ### Holes
 
-RA holes will match the subsize diameter. All other holes will match the final diameter.
-Countersunk or DTE holes do not need to be in the DXF file.
+- RA holes will match the subsize diameter
+- All other holes will match the final diameter
+- Countersunk or DTE holes do not need to be in the DXF file
 
 ### Bent Plates
 
@@ -42,8 +43,8 @@ Bent plates with holes on both sides of the bend line do not require DXF files (
 
 ### Beveled, Tapered and Chamfered plates
 
-Beveled plates, or plates that have a thickness taper, should have their thickness noted as the thickest point on the plate.
-Edge bevels/chamfers do not need to be in the DXF file.
+- Beveled plates, or plates that have a thickness taper, should have their thickness noted as the thickest point on the plate.
+- Edge bevels/chamfers do not need to be in the DXF file.
 
 ### Direction-of-rolling constraint
 
