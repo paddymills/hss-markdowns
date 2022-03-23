@@ -32,6 +32,8 @@ Text attributes on the PARTDATA layer are to be organized into KEY: VALUE pairs.
 | **DRAWING** | Drawing number | alphanumeric | 1 or X1 |
 | **REVISION** | Revision number | alphanumeric | 0 |
 
+<div style="page-break-after: always;"></div>
+
 ### Holes
 
 - RA holes will match the subsize diameter
