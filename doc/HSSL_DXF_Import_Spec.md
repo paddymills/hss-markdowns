@@ -10,6 +10,10 @@ This specification outlines the format for which High Steel Structures<sup>LLC</
 
 Part files should be named using the [job]_[mark]-[revision] format. For example: part `x1a` for job `1200018A` with revision `0` would be named `1200018A_x1a-R0`
 
+### Part Orientation
+
+Parts should be oriented with the same orientation as they are displayed on the drawing.
+
 ### Layers
 
 Entities are to be grouped into the following layers:
