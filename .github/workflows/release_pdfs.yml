@@ -32,7 +32,7 @@ jobs:
         id: version
         uses: technicallyjosh/next-version-action@v1
         with:
-          version: ${{ steps.last_release.outputs.name }}
+          version: ${{ steps.last_release.outputs.tag_name }}
 
       - name: Update CHANGELOG
         id: changelog
