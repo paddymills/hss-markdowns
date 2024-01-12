@@ -34,6 +34,12 @@ jobs:
         with:
           version: ${{ steps.last_release.outputs.tag_name }}
 
+      - name: Create new tag
+        uses: cardinalby/git-tag-action@master
+        env:
+          TAG: ${{ steps.last_release.outputs.tag_name }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Update CHANGELOG
         id: changelog
         uses: requarks/changelog-action@v1
