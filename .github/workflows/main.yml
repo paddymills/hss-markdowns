@@ -17,11 +17,11 @@ jobs:
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: doc
-          output_dir: doc
+          output_dir: pdf
           images_dir: doc/img
           image_import: ./img
           build_html: false
       - uses: actions/upload-artifact@v3
         with:
           name: docs
-          path: doc
+          path: pdf
