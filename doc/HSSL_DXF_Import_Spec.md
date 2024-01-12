@@ -65,6 +65,6 @@ This can be a two line arrow or three line arrow. Only lines are needed. Dimensi
 ![Alt text][example]
 
 [comment]: <> (links)
-![arrow2]: http://localhost:3000/dxf_arrow2_small.png "two-line arrow"
-![arrow3]: http://localhost:3000/dxf_arrow3_small.png "three-line arrow"
-![example]: http://localhost:3000/dxf_example.png "example"
+[arrow2]: http://localhost:3000/dxf_arrow2_small.png "two-line arrow"
+[arrow3]: http://localhost:3000/dxf_arrow3_small.png "three-line arrow"
+[example]: http://localhost:3000/dxf_example.png "example"
