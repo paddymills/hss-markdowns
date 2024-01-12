@@ -47,6 +47,7 @@ jobs:
           token: ${{ github.token }}
           toTag: ${{ steps.last_release.outputs.tag_name }}
           fromTag: ${{ steps.version.outputs.next_version }}
+          includeInvalidCommits: true
 
       - name: Create Release with PDFs
         uses: ncipollo/release-action@v1.13.0
