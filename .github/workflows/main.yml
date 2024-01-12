@@ -17,7 +17,6 @@ jobs:
       with:
         markdown_dir: doc
         output_dir: tmp
-        media_dir: img
     - uses: actions/upload-artifact@v1
       with:
         name: platform-architecture-docs
