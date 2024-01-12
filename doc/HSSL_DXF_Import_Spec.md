@@ -12,7 +12,7 @@ Part files should be named using the [job]_[mark]-[revision] format. For example
 
 ### Part Orientation
 
-Parts should be oriented with the same orientation as they are displayed on the drawing.
+The part orientation should match that of the drawing.
 
 ### Layers
 
