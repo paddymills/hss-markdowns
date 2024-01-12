@@ -22,6 +22,7 @@ jobs:
           images_dir: doc/img
           image_import: ./img
           build_html: false
+
       - name: Last release
         id: last_release
         uses: InsonusK/get-latest-release@v1.1.0
@@ -31,24 +32,26 @@ jobs:
         id: version
         uses: technicallyjosh/next-version-action@v1
         with:
-          version: ${{ steps.last_release.outputs.tag_name }}
-      - name: Create release
-        uses: actions/create-release@v1
+          version: ${{ steps.last_release.outputs.name }}
+
+      - name: Update CHANGELOG
+        id: changelog
+        uses: requarks/changelog-action@v1
+        with:
+          token: ${{ github.token }}
+          tag: ${{ github.ref_name }}
+
+      - name: Create Release with PDFs
+        uses: ncipollo/release-action@v1.13.0
         id: create_release
         with:
+          allowUpdates: true
           draft: false
           prerelease: false
-          release_name: ${{ steps.version.outputs.next_version }}
-          tag_name: ${{ github.ref }}
-          body_path: CHANGELOG.md
+          makeLatest: true
+          tag: ${{ steps.version.outputs.next_version }}
+          body: ${{ steps.changelog.outputs.changes }}
+          artifacts: pdf/*
+          token: ${{ github.token }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
-      - name: upload pdf files
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: pdf
-          asset_name: docs
-          asset_content_type: application/zip
