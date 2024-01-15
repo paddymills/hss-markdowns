@@ -12,7 +12,7 @@ Part files should be named using the [job]_[mark]-[revision] format. For example
 
 ### Part Orientation
 
-The part orientation should match that of the drawing.
+The orientation of all parts/components in the dxf file should match the orientation of the part/component as shown on the shop drawing.
 
 ### Layers
 
